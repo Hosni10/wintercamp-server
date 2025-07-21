@@ -270,7 +270,10 @@ app.post("/api/bookings", async (req, res) => {
       discountType = "adnec employees";
     } else if (discountCode === "Adnecstaff20@adss2025") {
       discountType = "adnec staff";
-    } else if (discountCode) {
+    } else if (discountCode === "POD50@ADSS2025") {
+      discountType = "pod";
+    }
+    else if (discountCode) {
       discountType = "normal";
     }
 
