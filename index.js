@@ -76,7 +76,6 @@ app.get("/test-cors", (req, res) => {
   });
 });
 
-const YOUR_DOMAIN = "https://summercamp-client-67a8.vercel.app/"; // Update to your frontend URL
 
 db();
 
