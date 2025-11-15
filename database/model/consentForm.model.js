@@ -48,4 +48,4 @@ const consentFormSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("ConsentForm", consentFormSchema);
+module.exports = mongoose.model("ConsentForm_wintercamp", consentFormSchema);

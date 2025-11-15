@@ -112,7 +112,7 @@ const getEmailTemplate = (bookingData) => {
       description.includes("monday")
     ) {
       return {
-        title: "Atomics Sports & Entertainment Summer Camp",
+        title: "Atomics Sports & Entertainment Winter Camp",
         logoAlt: "Atomics Entertainment Logo",
       };
     }
@@ -135,7 +135,7 @@ const getEmailTemplate = (bookingData) => {
     // Kids Camp indicators in name
     if (planName.includes("camp") || planName.includes("day access")) {
       return {
-        title: "Atomics Sports & Entertainment Summer Camp",
+        title: "Atomics Sports & Entertainment Winter Camp",
         logoAlt: "Atomics Entertainment Logo",
       };
     }
@@ -148,7 +148,7 @@ const getEmailTemplate = (bookingData) => {
   }
   const branding = getEmailBranding(membershipPlan, planDescription);
   // REMINDER: Update the logo URL to your public server when deploying
-  const logoUrl = `${"http://localhost:5000"}/public/email-logo.jpeg`;
+  const logoUrl = `${"https://wintercamp-client.vercel.app"}/public/email-logo.jpeg`;
 
   return `
     <!DOCTYPE html>
@@ -156,7 +156,7 @@ const getEmailTemplate = (bookingData) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${branding.title} - Booking Confirmation</title>
+        <title>${branding.title} - Booking Confirmation</title>     
     </head>
     <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa;">
         <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f8f9fa;">
@@ -285,12 +285,7 @@ const getEmailTemplate = (bookingData) => {
                                                     <tr>
                                                         <td style="font-weight: 600; color: #495057; font-size: 14px;">Location:</td>
                                                         <td style="color: #212529; text-align: right; font-weight: 500; font-size: 14px;">
-                                                          ${
-                                                            bookingData.location ===
-                                                            "alAin"
-                                                              ? "ADNEC, Al Ain"
-                                                              : "Adnec, Abu Dhabi summer sports, Abu Dhabi"
-                                                          }
+                                                          Adnec, Abu Dhabi summer sports, Abu Dhabi
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -317,9 +312,9 @@ const getEmailTemplate = (bookingData) => {
                                 
                                 <!-- Welcome Section -->
                                 <div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px;">
-                                    <h3 style="color: #1976d2; margin-bottom: 15px; font-size: 20px;">🎉 Welcome to Atomics Football Summer Camp!</h3>
+                                    <h3 style="color: #1976d2; margin-bottom: 15px; font-size: 20px;">🎉 Welcome to Atomics Football Winter Camp!</h3>
                                     <p style="color: #424242; line-height: 1.6; font-size: 15px;">
-                                        Thank you for choosing our summer camp! We're excited to have your children join us for an amazing 
+                                        Thank you for choosing our winter camp! We're excited to have your children join us for an amazing 
                                         sports experience filled with fun, learning, and adventure. Our experienced coaches are ready to 
                                         provide the best training and guidance for your young athletes.
                                     </p>
