@@ -310,9 +310,9 @@ app.post("/api/bookings", async (req, res) => {
       ) {
         weekdaysToAdd = 22; // 22 weekdays (approximately 1 month)
       }
-      // Full camp plans: Set expiry to end of summer (August 21st, 2025)
+      // Full camp plans: Set expiry to end of camp (January 2nd, 2026)
       else if (planName.includes("full camp") || planName.includes("full")) {
-        const expiry = new Date("2025-08-21");
+        const expiry = new Date("2026-01-02");
         return expiry.toISOString().split("T")[0]; // Return as YYYY-MM-DD
       } else {
         // Default to 5 weekdays if plan is not recognized
@@ -559,8 +559,8 @@ app.get("/api/test-db", async (req, res) => {
           gender: "boy",
         },
       ],
-      startDate: "2024-07-01",
-      expiryDate: "2024-07-03", // 3-day plan
+      startDate: "2025-12-10",
+      expiryDate: "2025-12-12", // 3-day plan
       membershipPlan: "3-Days Access",
       location: "abuDhabi",
       totalAmountPaid: 650,
