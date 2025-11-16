@@ -35,7 +35,7 @@ const corsOptions = {
       DOMAIN_URL,
       SERVER_URL,
       "https://summercamp-client.vercel.app",
-      "https://summercamp-client-67a8.vercel.app",
+      "https://wintercamp-client.vercel.app",
       "http://localhost:5173",
       "http://localhost:3000",
     ];
