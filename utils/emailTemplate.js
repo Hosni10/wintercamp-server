@@ -285,7 +285,7 @@ const getEmailTemplate = (bookingData) => {
                                                     <tr>
                                                         <td style="font-weight: 600; color: #495057; font-size: 14px;">Location:</td>
                                                         <td style="color: #212529; text-align: right; font-weight: 500; font-size: 14px;">
-                                                          Adnec, Abu Dhabi summer sports, Abu Dhabi
+                                                          Active Al Maryah Island Sports & Recreation , Abu Dhabi
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -339,7 +339,7 @@ const getEmailTemplate = (bookingData) => {
                             <td style="background: linear-gradient(135deg, #343a40 0%, #212529 100%); color: white; padding: 30px; text-align: center;">
                                 <div style="margin-bottom: 20px;">
                                     <p style="margin: 8px 0; font-size: 14px; opacity: 0.9;"><strong style="color: #fff; font-weight: 600;">Atomics Football Summer Camp</strong></p>
-                                    <p style="margin: 8px 0; font-size: 14px; opacity: 0.9;">📍 ADNEC, Abu Dhabi Summer Sports, UAE</p>
+                                    <p style="margin: 8px 0; font-size: 14px; opacity: 0.9;">📍 Active Al Maryah Island Sports & Recreation , Abu Dhabi</p>
                                     <p style="margin: 8px 0; font-size: 14px; opacity: 0.9;">📞 050 333 1468</p>
                                     <p style="margin: 8px 0; font-size: 14px; opacity: 0.9;">✉️ info@atomicsfootball.com</p>
                                 </div>
