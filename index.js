@@ -380,7 +380,7 @@ app.post("/api/bookings", async (req, res) => {
       // Determine email subject based on plan type
       const emailSubject =
         planType === "Kids Camp"
-          ? "Your Atomics Sports & Entertainment Summer Camp Booking Confirmation"
+          ? "Your Atomics Sports & Entertainment Winter Camp Booking Confirmation"
           : "Your Atomics Football Clinic Booking Confirmation";
 
       const emailResult = await sendEmail(
