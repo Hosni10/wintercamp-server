@@ -15,13 +15,11 @@ const app = express();
 
 // Environment variables with fallbacks
 const DOMAIN_URL =
-  process.env.DOMAIN_URL || "https://summercamp-client.vercel.app";
+  process.env.DOMAIN_URL || "https://wintercamp-client.vercel.app";
 const SERVER_URL =
-  process.env.SERVER_URL || "https://summercamp-server.onrender.com";
+  process.env.SERVER_URL || "https://wintercamp-server.onrender.com";
 
 console.log("Server CORS Configuration:");
-console.log("DOMAIN_URL:", DOMAIN_URL);
-console.log("SERVER_URL:", SERVER_URL);
 
 app.use(express.json());
 
