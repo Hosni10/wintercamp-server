@@ -9,7 +9,8 @@ const sendEmail = async (to, subject, html) => {
     // Production transporter using environment variables
     transporter = nodemailer.createTransport({
       service: "gmail",
-      port: 465,
+      host: "smtp.gmail.com",
+      secure: false,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
