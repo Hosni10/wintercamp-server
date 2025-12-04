@@ -148,7 +148,7 @@ const getEmailTemplate = (bookingData) => {
   }
   const branding = getEmailBranding(membershipPlan, planDescription);
   // REMINDER: Update the logo URL to your public server when deploying
-  const logoUrl = `${"https://wintercamp-client.vercel.app"}/public/email-logo.jpeg`;
+  const logoUrl = `${"https://wintercamp-client.vercel.app"}/assets/AFC-Logo-LY0TdD3E.svg`;
 
   return `
     <!DOCTYPE html>
@@ -166,6 +166,7 @@ const getEmailTemplate = (bookingData) => {
                         <!-- Header -->
                         <tr>
                             <td style="background: linear-gradient(135deg, #ed3227 0%, #c41e3a 100%); color: white; padding: 40px 30px; text-align: center;">
+                                <img src="${logoUrl}" alt="${branding.logoAlt}" style="max-width: 200px; max-height: 80px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;" />
                                 <div style="font-size: 32px; font-weight: bold; color: white; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">${
                                   branding.title
                                 }</div>
