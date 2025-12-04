@@ -327,7 +327,6 @@ const getEmailTemplate = (bookingData) => {
                                         <li style="margin-bottom: 10px; font-size: 14px;"><strong>Check-in Time:</strong> 8:30 AM to 8:55 AM</li>
                                         <li style="margin-bottom: 10px; font-size: 14px;"><strong>Program Start:</strong> 9:00 AM</li>
                                         <li style="margin-bottom: 10px; font-size: 14px;"><strong>Contact:</strong> 050 333 1468 for any questions or concerns</li>
-                                        <li style="margin-bottom: 10px; font-size: 14px;"><strong>Weather:</strong> Activities may be adjusted based on weather conditions for safety</li>
                                         <li style="margin-bottom: 10px; font-size: 14px;"><strong>Consent Form:</strong> Please complete the consent form to finalize your booking</li>
                                     </ul>
                                 </div>
