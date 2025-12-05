@@ -557,7 +557,7 @@ app.get("/api/test-db", async (req, res) => {
           gender: "boy",
         },
       ],
-      startDate: "2025-12-10",
+      startDate: "2025-12-08",
       expiryDate: "2025-12-12", // 3-day plan
       membershipPlan: "3-Days Access",
       location: "abuDhabi",
